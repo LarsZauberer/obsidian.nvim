@@ -886,7 +886,7 @@ Client.follow_link_async = function(self, link, opts)
 
       if util.is_pdf(res.location) then
         if self.opts.follow_pdf_func ~= nil then
-          self.opts.follow_pdf_func(res.location)
+          self.opts.follow_pdf_func(res.url)
         else
           log.warn "This looks like a pdf path. You can customize the behavior of pdfs with the 'follow_pdf_func' option."
         end
