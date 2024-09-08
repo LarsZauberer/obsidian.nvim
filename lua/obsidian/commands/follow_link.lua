@@ -1,11 +1,6 @@
 ---@param client obsidian.Client
 return function(client, data)
   local opts = {}
-  local all = ""
-  for k, v in pairs(data) do
-    all = all .. k .. ": " .. v .. " | "
-  end
-  print(all)
   if data.args and string.len(data.args) > 0 then
     opts.open_strategy = data.args
   end
