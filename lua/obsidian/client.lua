@@ -854,7 +854,6 @@ Client.follow_link_async = function(self, link, opts)
 
   self:resolve_link_async(link, function(...)
     local results = { ... }
-    print(tostring(link))
 
     if #results == 0 then
       return
