@@ -852,11 +852,11 @@ end
 Client.follow_link_async = function(self, link, opts)
   opts = opts and opts or {}
 
-  local all = ""
-  for k, v in pairs(opts) do
-    all = all .. k .. ": " .. tostring(v) .. " | "
-  end
-  print("All: [" .. all)
+  -- local all = ""
+  -- for k, v in pairs(opts) do
+  --   all = all .. k .. ": " .. tostring(v) .. " | "
+  -- end
+  -- print("All: [" .. all)
 
   self:resolve_link_async(link, function(...)
     local results = { ... }
