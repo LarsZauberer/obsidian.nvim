@@ -2,7 +2,7 @@
 return function(client, data)
   local opts = {}
   local all = ""
-  for k, v in pairs(data) do
+  for k, v in pairs(data.fargs) do
     all = all .. k .. ": " .. tostring(v) .. " | "
   end
   print("All: [" .. all)
